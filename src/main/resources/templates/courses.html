@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<p>Courses information: </p>
+<tr th:each="c : ${courses}">
+    <td th:text="${c.key}">keyvalue</td>
+    <td th:text="${c.value}">value</td>
+</tr>
+</body>
+</html>

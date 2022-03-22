@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<p>LMS OIDC account information: </p>
+<tr th:each="i : ${oauth2user}">
+    <td th:text="${i.key}">keyvalue</td>
+    <td th:text="${i.value}">value</td>
+</tr>
+</body>
+</html>
